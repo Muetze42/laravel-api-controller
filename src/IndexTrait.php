@@ -51,7 +51,7 @@ trait IndexTrait
 
         $paginator = $query
             ->orderBy($order['column'], $order['direction'])
-            ->simplePaginate(
+            ->paginate(
                 $this->perPage($request),
                 ['*'],
                 $this->pageName($request)
