@@ -45,7 +45,6 @@ trait IndexTrait
         $query = $this->indexQuery($query, $request);
         $query = $this->indexFilterQuery($query, $request);
         $query = $query->with($this->indexRelationships($request));
-        $query = $query->with($this->indexRelationships($request));
         $query = $this->trashedQuery($query, $request);
 
         $order = $this->order($request);

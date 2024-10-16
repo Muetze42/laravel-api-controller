@@ -32,7 +32,7 @@ class Controller extends AbstractController
     }
 
     /**
-     * Display a listing of the resource.
+     * Display the specified resource.
      *
      * @param \Illuminate\Http\Request $request
      * @param mixed                    ...$arguments
